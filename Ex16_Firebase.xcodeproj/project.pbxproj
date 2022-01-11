@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1804EB0B278D453300CFDC8E /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804EB0A278D453300CFDC8E /* UploadViewController.swift */; };
 		18B48D0B278C057800429CDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B48D0A278C057800429CDD /* AppDelegate.swift */; };
 		18B48D0D278C057800429CDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B48D0C278C057800429CDD /* SceneDelegate.swift */; };
 		18B48D0F278C057800429CDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B48D0E278C057800429CDD /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1804EB0A278D453300CFDC8E /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		18B48D07278C057800429CDD /* Ex16_Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ex16_Firebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B48D0A278C057800429CDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18B48D0C278C057800429CDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				18B48D0C278C057800429CDD /* SceneDelegate.swift */,
 				18B48D0E278C057800429CDD /* ViewController.swift */,
 				18B48D10278C057800429CDD /* Main.storyboard */,
+				1804EB0A278D453300CFDC8E /* UploadViewController.swift */,
 				18B48D3A278C1FCA00429CDD /* ListViewController.swift */,
 				18B48D13278C057800429CDD /* Assets.xcassets */,
 				18B48D15278C057800429CDD /* LaunchScreen.storyboard */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18B48D0F278C057800429CDD /* ViewController.swift in Sources */,
+				1804EB0B278D453300CFDC8E /* UploadViewController.swift in Sources */,
 				18B48D0B278C057800429CDD /* AppDelegate.swift in Sources */,
 				18B48D3B278C1FCA00429CDD /* ListViewController.swift in Sources */,
 				18B48D0D278C057800429CDD /* SceneDelegate.swift in Sources */,

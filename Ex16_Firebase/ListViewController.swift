@@ -47,12 +47,38 @@ class ListViewController: UIViewController {
     
     @IBAction func onBtnAdd(_ sender: UIButton) {
         
-        
+        addListData()
     }
     
     @IBAction func onBtnRead(_ sender: UIButton) {
         readListData()
         
+    }
+    
+    func addListData() {
+        var idol = Idoldata()
+        idol.name = "태연"
+        idol.image = "image3.png"
+        //DB에 접근하려면 딕셔너리로 변환을 시켜줘야 한다,
+        
+        let idoldic = idol.getDic()
+        
+        let db = Firestore.firestore()
+        
+        var ref : DocumentReference? = nil
+        
+        ref = db.collection("Idols").addDocument(data: idoldic) {
+            error in
+            if error != nil {
+                print("error \(error!.localizedDescription)")
+                self.Textview.text.append("\n쓰기 오류 발생")
+            }
+            else {
+                print("도큐먼트 쓰기 성공")
+                print("도큐먼트 아이디 : \(ref!.documentID)")
+                self.Textview.text.append("\n도큐면트 쓰기 성공,")
+            }
+        }
     }
     
     func readListData() {
